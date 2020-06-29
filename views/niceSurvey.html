@@ -1,0 +1,128 @@
+<html>
+
+<head>
+  <title>Questionnaire</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+</head>
+
+<body style="background-color: lightblue;">
+
+  <div class="container-md px-5 py-3 my-5 border bg-light" style="border-radius: 10px;" id="survey">
+    <h1 class="text-center text-black">Survey</h1>
+    <h3 class="text-center text-black pb-2">Hi there! Thank you for taking the time to complete this quick survey.</h3>
+    <div class="bg-dark mb-2" style="height: 5px;">.</div>
+    
+    <h4 class="text-center">
+      Today you will be testing <a href="http://www.nhl.com" target="_blank"><em>nhl.com</em></a>.
+  </h4>
+  <a style="margin-left: 20%;" href="http://www.nhl.com" target="_blank"><img class="pb-4" src="/nhl.png" alt="www.nhl.com" width="60%" ></a><br>
+    
+    <form>
+      <h3 class="text-secondary pb-3">Let's get started with some info about you!</h3>
+      <h5 for="fname">First name: &nbsp;&nbsp;</h5>
+      <input style="border-radius: 30px;" type="text" id="fname" name="fname" required><br>
+      <h5 for="lname">Last name: &nbsp;&nbsp;</h5>
+      <input style="border-radius: 30px;" type="text" id="lname" name="lname" required><br><br>
+
+      <h5 class="pr-3">What is your gender?</h5>
+      <input type="radio" selected="selected" id="male" name="gender" value="male">
+      <label class="radio-text pr-3" for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label class="radio-text pr-3" for="female">Female</label>
+      <input type="radio" id="other" name="gender" value="other">
+      <label class="radio-text pr-3" for="other">Other</label><br><br>
+
+      <h3 class="text-secondary pb-3">Tell us about your experience</h3>
+      <h5 class="pr-5">On a scale of 1-10, what would you rate the UI?</label>
+      <select class="ml-3" id="scale">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select><br>
+
+      <h5 class="question">What are the most important features of the website for you?</h5>
+      <div class="py-2" style="display: flex; flex-direction: row; justify-content: space-between; width: 60%">
+        <div class="pr-2" >
+          <input type="checkbox" name="feature" value="ng">&nbsp;&nbsp;News Gallery
+        </div>
+        <div class="pr-2" >
+          <input type="checkbox" name="feature" value="ls">&nbsp;&nbsp;Live Score
+        </div>
+        <div class="pr-2" >
+          <input type="checkbox" name="feature" value="sm">&nbsp;&nbsp;Social Media
+        </div>
+        <div class="pr-2" >
+          <input type="checkbox" name="feature" value="lv">&nbsp;&nbsp;Latest Videos
+        </div>
+        <div class="pr-2">
+          <input type="checkbox" name="feature" value="o">&nbsp;&nbsp;Other
+        </div>
+      </div>
+
+
+      <h5 class="pb-2">How likely is it that you will recommend <em>nhl.com</em> to a friend or colleague?</h5>
+      <div class="text-center" style="display: flex; flex-direction: row; justify-content: space-between; width: 60%">
+        <div>
+          <input type="radio" name="recommend" value="vu"><br>Very Unlikely
+        </div>
+        <div>
+          <input type="radio" name="recommend" value="u"><br>Unlikely
+        </div>
+        <div>
+          <input type="radio" name="recommend" value="n"><br>Neutral
+        </div>
+        <div>
+          <input type="radio" name="recommend" value="l"><br>Likely
+        </div>
+        <div>
+          <input type="radio" name="recommend" value="sl"><br>Highly Likely
+        </div>
+      </div>
+
+      <div class="pt-3">Comments/Suggestions:</div>
+      <textarea type="radio" rows="4" cols="50"></textarea>
+
+
+      <h2> What fruits(s) do you like? </h2>
+      I like:<br>
+      <input type="text" name="fruit" placeholder="fruit name..." required />
+      <br>
+      <br>
+      <h2> What color(s) do you like? </h2>
+      I like:<br>
+      <input type="checkbox" name="color" value="Red"> Red<br>
+      <input type="checkbox" name="color" value="Green"> Green<br>
+      <input type="checkbox" name="color" value="Blue"> Blue<br>
+      <br>
+      <h2>What is your favorite animal?</h2>
+      I like:<br>
+      <select name="animal">
+        <option value="Cat" selected="selected">Cat</option>
+        <option value="Dog">Dog</option>
+        <option value="Turtle">Turtle</option>
+      </select>
+      <br>
+      <br>
+      <button type="submit" class="btn btn-warning" id="bb">Submit</button>
+      <p id="thanks"></p>
+    </form>
+  </div>
+  <script src="/assets/action.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+html {
+    background-color: lightblue;
+    background-size: cover;
+    display: none;
+  }
+  
+  body {
+    width: 70%;
+    margin: 5% 10% 0% 10%;
+    border-radius: 20px;
+    padding: 2% 5%;
+    text-align: center;
+    background-color: lightblue;
+  }
+  
+  a {
+    text-decoration: none;
+    color: blue;
+  }
+  
+  footer > p {
+    margin-top: 5%;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  h1 {
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  img :hover{
+    opacity: 50%;
+  }
+  
+  input {
+    border-radius: 15px;
+    padding: 5px 15px;
+    margin: 5px 0px;
+    text-decoration: none;
+  }
+  
+  .main-div {
+    display: inline-block;
+    width: 100%;
+    height: 90%;
+    background-color: white;
+    border-radius: 15px;
+  }
+  
+  .top-div {
+    padding: 5% 10% 2.5% 10%;
+    background: lightgrey;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .middle-div {
+    padding: 2% 5% 1% 5%;
+  }
+  
+  label > .radio-text {
+    margin-right: 20px;
+  }
+  
+  .question {
+    font-size: 16px;
+    margin-bottom: 18px;
+  }
+  
+  .five-opt {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto 25%;
+    font-size: 12px;
+  }
+  
+  .rate {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto 25%;
+  }
+  
+  .rate > select {
+    margin-bottom: 18px;
+  }
+  
+  .submit {
+    padding: 1% 15%;
+    margin-bottom: 3%;
+    font-size: 18px;
+  }
+  
+  .checkbox-question {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto 10% 2%;
+  }
+  
+  .question {
+    margin-bottom: 18px;
+  }
+  
+  .comment-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2% 25% ;
+  }
+  
+  .comment-section > .question {
+    padding-right: 5%;
+  }
