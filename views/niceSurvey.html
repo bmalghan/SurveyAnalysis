@@ -28,21 +28,21 @@
     <form>
       <h3 class="text-secondary pb-3">Let's get started with some info about you!</h3>
       <h5 for="fname">First name: &nbsp;&nbsp;</h5>
-      <input style="border-radius: 30px;" type="text" id="fname" name="fname" required><br>
+      <input style="border-radius: 30px;" type="text" id="fname" name="name" required><br>
       <h5 for="lname">Last name: &nbsp;&nbsp;</h5>
-      <input style="border-radius: 30px;" type="text" id="lname" name="lname" required><br><br>
+      <input style="border-radius: 30px;" type="text" id="lname" name="name" required><br><br>
 
       <h5 class="pr-3">What is your gender?</h5>
-      <input type="radio" selected="selected" id="male" name="gender" value="male">
+      <input type="radio" selected="selected" id="male" name="gender" value="male" required>
       <label class="radio-text pr-3" for="male">Male</label>
       <input type="radio" id="female" name="gender" value="female">
       <label class="radio-text pr-3" for="female">Female</label>
-      <input type="radio" id="other" name="gender" value="other">
-      <label class="radio-text pr-3" for="other">Other</label><br><br>
+      <input type="radio" id="other" name="gender" value="other" required>
+      <label class="radio-text pr-3" for="other" >Other</label><br><br>
 
       <h3 class="text-secondary pb-3">Tell us about your experience</h3>
       <h5 class="pr-5">On a scale of 1-10, what would you rate the UI?</label>
-      <select class="ml-3" id="scale">
+      <select class="ml-3" id="scale" name="rate">
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -84,38 +84,19 @@
           <input type="radio" name="recommend" value="u"><br>Unlikely
         </div>
         <div>
-          <input type="radio" name="recommend" value="n"><br>Neutral
+          <input type="radio" name="recommend" value="n" required><br>Neutral
         </div>
         <div>
           <input type="radio" name="recommend" value="l"><br>Likely
         </div>
         <div>
-          <input type="radio" name="recommend" value="sl"><br>Highly Likely
+          <input type="radio" name="recommend" value="hl"><br>Highly Likely
         </div>
       </div>
 
-      <div class="pt-3">Comments/Suggestions:</div>
-      <textarea type="radio" rows="4" cols="50"></textarea>
+      <h5 class="pt-3">Comments/Suggestions:</h5>
+      <textarea name= "comment" type="radio" rows="4" cols="50"></textarea>
 
-
-      <h2> What fruits(s) do you like? </h2>
-      I like:<br>
-      <input type="text" name="fruit" placeholder="fruit name..." required />
-      <br>
-      <br>
-      <h2> What color(s) do you like? </h2>
-      I like:<br>
-      <input type="checkbox" name="color" value="Red"> Red<br>
-      <input type="checkbox" name="color" value="Green"> Green<br>
-      <input type="checkbox" name="color" value="Blue"> Blue<br>
-      <br>
-      <h2>What is your favorite animal?</h2>
-      I like:<br>
-      <select name="animal">
-        <option value="Cat" selected="selected">Cat</option>
-        <option value="Dog">Dog</option>
-        <option value="Turtle">Turtle</option>
-      </select>
       <br>
       <br>
       <button type="submit" class="btn btn-warning" id="bb">Submit</button>

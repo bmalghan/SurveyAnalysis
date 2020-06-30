@@ -5,9 +5,6 @@ $(document).ready(function(){
       
       // var item = $('form input');
       // console.log(item.serializeArray());
-
-      console.log($(this).serializeArray())
-
       $.ajax({
         type: 'POST',
         url: '/niceSurvey',
